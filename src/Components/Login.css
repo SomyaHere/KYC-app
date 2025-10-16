@@ -1,0 +1,95 @@
+.login-container {
+  background: linear-gradient(180deg, #00264d, #003366);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* White curved layer */
+.login-container::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 80%;
+  background: white;
+  border-radius: 50% / 15%;
+  top: 60%;
+  left: -25%;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+
+/* Login Card */
+.login-card {
+  background: white;
+  width: 320px;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+}
+
+/* Title and Subtitle */
+.title {
+  color: #00264d;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+/* Form Inputs */
+form input,
+form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background: #00264d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background: #004080;
+}
+
+/* Footer text */
+.footer-text {
+  font-size: 13px;
+  color: #555;
+  margin-top: 15px;
+}
+
+.footer-text span {
+  color: #004080;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.message {
+  color: green;
+  font-size: 13px;
+  margin-top: 10px;
+}
